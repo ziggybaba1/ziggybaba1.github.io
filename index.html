@@ -1,262 +1,177 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adejugbagbe Oluwaseyi's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: black;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 1px solid;
+        }
+        header a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            gap:20px;
+        }
+        header #branding img {
+            width:20px;
+            border-radius:20px;
+        }
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-
-    <title>Cloud Storage</title>
-
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/stroke.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
-    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
-
-    <!-- CUSTOM -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+        .container img {
+            margin-top:30px;
+            width:120px;
+            border-radius:80px;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+            background-color:black;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+        }
+        .main-content h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .main-content p {
+            line-height: 1.6;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+        .column-center{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            gap:10px;
+        }
+    </style>
+   
 </head>
-
 <body>
-
-    <div id="wrapper">
-
+    <header>
         <div class="container">
-
-            <section id="top" class="section docs-heading">
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="big-title text-center">
-                            <h1>Google Cloud Storage</h1>
-                            <p class="lead">Laravel & React Js Built App</p>
-                        </div>
-                        <!-- end title -->
-                    </div>
-                    <!-- end 12 -->
-                </div>
-                <!-- end row -->
-
-                <hr>
-
-            </section>
-            <!-- end section -->
-
-            <div class="row">
-
-                <div class="col-md-3">
-                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
-                        <ul class="nav">
-                            <li><a href="#line1">Getting Started</a></li>
-                            <li><a href="#line2">How to Install Application</a></li>
-                            <li><a href="#line10">Version History (Changelog)</a></li>
-                        </ul>
-                    </nav >
-                </div>
-                <div class="col-md-9">
-                    <section class="welcome">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Introduction<hr></h2>
-                                <div class="row">
-
-                                    <div class="col-md-12 full">
-                                        <div class="intro1">
-                                            <ul>
-                                                <li><strong>Item Name : </strong>Cloud Storage Application(Laravel & React Js)</li>
-                                                <li><strong>Item Version : </strong> v 1.0</li>
-                                                <li><strong>Author  : </strong> <a href="https://github.com/ziggybaba1" target="_blank">Adejugbagbe Seyi</a></li>
-                                                <li><strong>Support Forum : </strong> <a href="https://github.com/ziggybaba1" target="_blank">https://github.com/ziggybaba1</a></li>
-                                                <li><strong>License : </strong> <a href="#" target="_blank">Un License</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <hr>
-                                        <div>
-                                            <h4>Requirements</h4>
-                                            <p>To install this app, You will need to make sure your server meets the following requirements:</p>
-                                            <ol>
-                                                <li>PHP >= 7.1.3</li>
-                                                <li>OpenSSL PHP Extension</li>
-                                                <li>PDO PHP Extension</li>
-                                                <li>Mbstring PHP Extension</li>
-                                                <li>Tokenizer PHP Extension</li>
-                                                <li>XML PHP Extension</li>
-                                                <li>Ctype PHP Extension</li>
-                                                <li>JSON PHP Extension</li>
-                                            </ol>
-                                            <div class="intro2 clearfix">
-                                                <p><i class="fa fa-exclamation-triangle"></i> Contact your server administrator to configure your server (shared server).
-                                                   
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- end row -->
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="line1" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Getting Started <a href="#top">#back to top</a><hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>A Simple Google Cloud Storage application with Reactjs frontend + Laravel api.This application covers basic application flows like login , register, reset password, forgot password,Admin dashboard, File Upload to Google Cloud, Files Download, Delete Files and Retrieve deleted Files.
-
-Please follow the below steps to run the project.This steps are for those who have laravel , composer and node installed in your local machine.If not, please proceed with the steps after installing the same.</p>
-
-                                <h4></h4>
-
-                                
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-                    <!-- end section -->
-
-                    <section id="line3" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install on local Server<a href="#top">#back to top</a><hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-<li>1) Run composer install to install your php dependencies.</li>
-<li>2) Run npm install to instal the node packages.</li>
-<li>3) Create a database of your own choice in mysql and configure your db in the .env file.</li>
-<li>4) Run php artisan migrate to scaffold your db with the required tables for your application</li>
-<li>5) Run npm run dev .</li>
-<li>6) Run php artisan serve .</li>
-<li>6) Create an account on Google Cloud platform</li>
-<li>7)Add a Google Cloud Credentials to your filesystems.php config</li>
- <hr>
-<pre>
-'gcs' =&gt; [
-    'driver' =&gt; 'gcs',
-    'project_id' =&gt; env('GOOGLE_CLOUD_PROJECT_ID', 'your-project-id'),
-    'key_file' =&gt; env('GOOGLE_CLOUD_KEY_FILE', null), // optional: /path/to/service-account.json
-    'bucket' =&gt; env('GOOGLE_CLOUD_STORAGE_BUCKET', 'your-bucket'),
-    'path_prefix' =&gt; env('GOOGLE_CLOUD_STORAGE_PATH_PREFIX', null), // optional: /default/path/to/apply/in/bucket
-    'storage_api_uri' =&gt; env('GOOGLE_CLOUD_STORAGE_API_URI', null), // see: Public URLs below
-],
-
-</pre>
-<li>8)Launch Application</li>
-
-                    </section>
-                    <!-- end section -->
-
-                   
-
-                    <section id="line10" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Version History (Changelog) <a href="#top">#back to top</a><hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <p></p>
-                                <p>Discuss issues occur on usage using my github page</p>
-
-                                <hr>
-
-                                <h4>Changelog</h4>
-
-                                <pre class="brush: html">
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 1.0.0 - May 30th, 2018
-                                        -----------------------------------------------------------------------------------------
-
-                                        - Api Authentication
-                                        - Google cloud Storage
-                                        - File Upload,File download and file delete
-
-                                      </pre>
-
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                   
-                    <!-- end section -->
-                </div>
-                <!-- // end .col -->
-
+            <div id="branding">
+                <!-- <img src="./image.png"  /> -->
+                <h1>Adejugbagbe Oluwaseyi</h1>
             </div>
-            <!-- // end .row -->
-
+            <!-- <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> -->
         </div>
-        <!-- // end container -->
+    </header>
 
-    </div>
-    <!-- end wrapper -->
+    <section class="showcase">
+        <div class="container">
+            <div class="column-center">
+            <img src="./image.png"  />
+            <b>Adejugbagbe Oluwaseyi</b>
+            </div>
+            <h1>Welcome to My Profile</h1>
+            <p>Discover more about me and my work.</p>
+        </div>
+    </section>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/retina.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
+    <section id="about" class="main-content">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate and versatile software professional skilled in developing robust applications, leading Agile teams, and architecting scalable solutions on the Cloud. With a solid background in software development and a strong understanding of Agile methodologies, I excel at delivering high-quality software products while ensuring efficient project management and seamless collaboration. I'm also proud to have graduated in the top 5% of the ALX Tech program and been selected for the Gold Fellowship program at The ROOM.</p>
 
-    <!-- CUSTOM PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
+                <p>Key Skills:</p>
+                <p>🚀 Full-stack Development: Proficient in designing, coding, and maintaining software applications across the entire development lifecycle, employing a range of technologies and programming languages.</p>
+                
+                    <p>🔧 Agile Leadership: Adept at guiding cross-functional teams through Agile practices, facilitating scrum meetings, and fostering a collaborative environment to achieve project objectives with maximum efficiency.</p>
+                
+                        <p>☁️ Cloud Solutions Expert: Extensive experience in leveraging the power of Amazon Web Services (AWS), Google Cloud Platform (GCP) to architect scalable, secure, and highly available cloud-based applications and infrastructure.</p>
+                
+                            <p>🔒 DevOps Integration: Expertise in implementing DevOps principles to automate deployment pipelines, continuous integration, and delivery, enabling rapid and reliable software releases.</p>
+                
+                                <p>📊 Problem-solving & Analytical Thinking: Strong analytical skills combined with a solution-oriented mindset, allowing me to identify complex problems, devise innovative solutions, and optimize application performance.</p>
+                
+                                    <p>Throughout my career, I have successfully delivered numerous projects, leveraging my technical expertise and leadership skills to drive results. Whether collaborating with cross-functional teams, orchestrating Agile processes, or designing efficient cloud solutions, I am committed to delivering value-driven software solutions that exceed expectations.
+                
+                Let's connect! I am open to exciting opportunities, collaborations, and discussing ways to leverage my skills to contribute to innovative projects and drive business success.</p>
+        </div>
+    </section>
 
-    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <section id="skills" class="main-content">
+        <div class="container">
+            <h2>Socials</h2>
+            <iframe src='https://widgets.sociablekit.com/linkedin-profile-posts/iframe/25527515' frameborder='0' width='100%' height='1000'></iframe>
+        </div>
+    </section>
+    
 
+    <section id="contact" class="main-content">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>seyiadejugbagbe@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>My Profile &copy; 2023</p>
+    </footer>
 </body>
-
 </html>
